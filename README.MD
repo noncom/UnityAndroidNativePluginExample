@@ -1,4 +1,4 @@
-#### What is this?
+## What is this?
 
 This is a simple Android Studio native C++ project, generated
 from the template in the starting wizard. However, the `cpp` part
@@ -7,11 +7,11 @@ from https://github.com/Unity-Technologies/NativeRenderingPlugin (full
 path in the repo is NativeRenderingPlugin/PluginSource/source/ ), taken
 from commit `cd54d6c389a0f79fde9407b93ed87e3a9ac1f0ca`.
 
-#### Why?
+## Why?
 
 I needed to experiment with having access to a Unity texture from native C++.
 
-#### What happened?
+## What happened?
 
 The NativeRenderingPlugin source was changed to:
 - fix the compilation errors (comment out the dependency on glx, this might have broken something, but I don't care)
@@ -22,7 +22,7 @@ The NativeRenderingPlugin source was changed to:
 Also, the `CMakeLists.txt` build instruction was changed to properly build
 the NativeRenderingPlugin for Android.
 
-#### What to do next?
+## What to do next?
 
 To get the built libraries, build the project and go to
 
@@ -38,7 +38,7 @@ After that the plugin should be available on Unity side.
 Be sure that the rendering backends are set to "Vulkan" and "GLES 3"
 in player settings in your Unity project.
 
-#### And?
+## And?
 
 And it also works inside the Unity Editor and maybe on other platforms
 as well.
